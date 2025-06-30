@@ -1,0 +1,12 @@
+services:
+  package:
+    image: {{cookiecutter.project_repo}}
+    build:
+      context: .
+      args:
+        PIP_ACCESS_TOKEN: ${PIP_ACCESS_TOKEN}
+    container_name: {{cookiecutter.project_name}}
+    environment:
+      - PIP_ACCESS_TOKEN=${PIP_ACCESS_TOKEN}
+    ports:
+      - "8888:8888"

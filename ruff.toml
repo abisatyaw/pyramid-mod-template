@@ -1,0 +1,46 @@
+# Exclude ignored directories.
+exclude = [
+  ".eggs",
+  ".ipynb_checkpoints",
+  ".tox",
+  "build",
+  "dist",
+  "docs/conf.py",
+]
+
+line-length = 88
+fix = false
+
+[lint]
+select = [
+  "F", # Pyflakes,
+  "E", "W", # Pycodestyle
+  "I", # Isort
+  "B", # flake8-bugbear
+  "Q", # flake8-quotes
+  "T10", # flake8-debugger
+  "LOG", # flake8-logging
+  "PL", # PyLint
+  "PT", # flake8-pytest-style
+  "PIE", # flake8-pie
+  "TID", # flake8-tidy-imports
+  "ISC", # flake8-implicit-str-concat
+  "TCH", # flake8-type-checking
+  "C4", # flake8-comprehensions
+  "RUF", # Ruff specific rules
+  "UP", # pyupgrade
+]
+
+
+ignore = [
+  ### Intentional Ignored Rules
+  "ISC001", # Implicit string concatenation is solved by formatter
+
+  ### To be enabled in the future
+  "PLR2004", # Enforces clear comparisons by using constant variables
+  "PLR0911", # Enforces number of expressions, simplifies function complexity
+  "PLR0913", # Enforces number of arguments, makes functions simpler
+  "PLW1508", # Enforces type for environment variable default; expected `str` or `None`
+  "PLW2901", # Enforces for loop to not reassign loop variable
+  "C901", # Enforces function complexity, simplifies function complexity
+]

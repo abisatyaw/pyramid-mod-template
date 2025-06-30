@@ -1,0 +1,7 @@
+services:
+  app:
+    volumes:
+      - .:/{{cookiecutter.project_repo}}
+    command: bash -c "tail -f /dev/null"
+    environment:
+      - PIP_ACCESS_TOKEN=${PIP_ACCESS_TOKEN}
