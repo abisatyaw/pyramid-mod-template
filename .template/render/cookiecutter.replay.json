@@ -1,0 +1,38 @@
+{
+  "cookiecutter": {
+    "project_title": "otel",
+    "project_name": "otel",
+    "project_repo": "pyramid-mod-otel",
+    "project_slug": "pyramid_mod_otel",
+    "project_short_description": "OpenTelemetry Integration",
+    "author_name": "Datalab",
+    "author_email": "datalab@vanoord.com",
+    "_copy_without_render": [
+      "*.pdf",
+      "*.png",
+      "*.jpg",
+      "*.gif",
+      "build",
+      "htmlcov",
+      "notebooks",
+      ".eggs",
+      ".mypy_cache",
+      ".pytest_cache",
+      "*__pycache__",
+      "*.egg-info"
+    ],
+    "_template": "/tmp/tmp9_swixnt/template",
+    "_output_dir": "/tmp/tmp9_swixnt/rendered",
+    "_repo_dir": "/tmp/tmp9_swixnt/template",
+    "_checkout": null
+  },
+  "_cookiecutter": {
+    "project_title": "MyProject",
+    "project_name": "{{ cookiecutter.project_title.lower().replace(' ','').replace('-','').replace('_','') }}",
+    "project_repo": "{{ 'pyramid-mod-' + cookiecutter.project_name }}",
+    "project_slug": "{{ 'pyramid_mod_' + cookiecutter.project_name }}",
+    "project_short_description": "",
+    "author_name": "Author",
+    "author_email": "{{ cookiecutter.author_name.replace(' ','.').lower() + '@vanoord.com' }}"
+  }
+}

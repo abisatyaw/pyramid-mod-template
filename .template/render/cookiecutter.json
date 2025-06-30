@@ -1,0 +1,23 @@
+{
+    "project_title": "MyProject",
+    "project_name": "{{ cookiecutter.project_title.lower().replace(' ','').replace('-','').replace('_','') }}",
+    "project_repo": "{{ 'pyramid-mod-' + cookiecutter.project_name }}",
+    "project_slug": "{{ 'pyramid_mod_' + cookiecutter.project_name }}",
+    "project_short_description": "",
+    "author_name": "Author",
+    "author_email": "{{ cookiecutter.author_name.replace(' ','.').lower() + '@vanoord.com' }}",
+    "_copy_without_render": [
+        "*.pdf",
+        "*.png",
+        "*.jpg",
+        "*.gif",
+        "build",
+        "htmlcov",
+        "notebooks",
+        ".eggs",
+        ".mypy_cache",
+        ".pytest_cache",
+        "*__pycache__",
+        "*.egg-info"
+    ]
+}
