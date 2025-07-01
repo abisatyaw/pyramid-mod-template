@@ -7,6 +7,7 @@ bootstrap:
 	@rm -rf .git
 	@echo "Initializing git repository..."
 	@git init
+	@git branch -m master main
 	@git add .
 	@git commit -m "Initial commit from template"
 	@echo "Project bootstrapped successfully!"
