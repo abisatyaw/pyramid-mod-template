@@ -7,19 +7,21 @@ A template repository to quickly bootstrap your own Pyramid mod project.
 1. **Clone this repository and rename it**
 
     ```bash
-    # clone
+    # clone and rename it into your mod
+    git clone https://github.com/your-org/pyramid-mod-template.git [your-mod-name]
+
+    # or you can clone and rename it manually
     git clone https://github.com/your-org/pyramid-mod-template.git
-    # copy and rename it to your project name
     cp pyramid-mod-template [your-mod-name]
-    # change directory
-    cd [your-mod-name]
+
     # Open up VS Code
+    cd [your-mod-name]
     code .
     ```
 
 2. **Run the bootstrap script**
 
-    On WSL / Linux system run:
+    On system terminal run:
 
     ```bash
     make bootstrap
