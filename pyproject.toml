@@ -14,6 +14,9 @@ dependencies = [
 requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
 
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
 [tool.hatch.version]
 source = "vcs"
 
@@ -50,14 +53,14 @@ dev = [
 [project.scripts]
 
 [project.entry-points."paste.app_factory"]
-main = "{{cookiecutter.project_repo}}:main"
+main = "pyramid-mod-otel:main"
 
 [tool.pytest.ini_options]
 testpaths = [
   "tests",
 ]
 addopts = [
-  "--cov={{cookiecutter.project_repo}}",
+  "--cov=pyramid-mod-otel",
   "--cov-config=pyproject.toml",
   "--cov-context=test",
 ]
@@ -90,8 +93,8 @@ norecursedirs = [
 
 [tool.coverage.run]
 branch = true
-source = ["{{cookiecutter.project_repo}}"]
-omit = ["{{cookiecutter.project_repo}}/tests*"]
+source = ["pyramid-mod-otel"]
+omit = ["pyramid-mod-otel/tests*"]
 
 [tool.coverage.report]
 ignore_errors = true

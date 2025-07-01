@@ -1,5 +1,5 @@
 services:
-  package:
+  app:
     image: {{cookiecutter.project_repo}}
     build:
       context: .
