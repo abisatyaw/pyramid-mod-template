@@ -8,6 +8,7 @@ dependencies = [
     "pyramid>=2.0.2",
     "pyramid-mod-accounts",
     "pyramid-mod-baseview>=4.0.1",
+    "requests>=2.32.3",
 ]
 
 [build-system]
