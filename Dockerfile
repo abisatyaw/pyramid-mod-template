@@ -41,5 +41,4 @@ WORKDIR /{{cookiecutter.project_repo}}
 COPY --chown=me:me . /{{cookiecutter.project_repo}}
 
 # Install all dependencies including the project
-RUN --mount=type=cache,target=/root/.cache/uv \
-    uv sync --frozen --no-dev
+RUN uv sync
