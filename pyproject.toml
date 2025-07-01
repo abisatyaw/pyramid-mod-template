@@ -1,7 +1,7 @@
 [project]
-name = "pyramid-mod-project"
+name = "{{cookiecutter.project_repo}}"
 dynamic = ["version"]
-description = ""
+description = "{{cookiecutter.project_short_description}}"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -48,7 +48,7 @@ testpaths = [
   "tests",
 ]
 addopts = [
-  "--cov=pyramid-mod-otel",
+  "--cov={{cookiecutter.project_repo}}",
   "--cov-config=pyproject.toml",
   "--cov-context=test",
 ]
@@ -81,8 +81,8 @@ norecursedirs = [
 
 [tool.coverage.run]
 branch = true
-source = ["pyramid-mod-otel"]
-omit = ["pyramid-mod-otel/tests*"]
+source = ["{{cookiecutter.project_repo}}"]
+omit = ["{{cookiecutter.project_repo}}/tests*"]
 
 [tool.coverage.report]
 ignore_errors = true
