@@ -9,5 +9,4 @@ bootstrap:
 	@git init
 	@git add .
 	@git commit -m "Initial commit from template"
-	@git branch -m master main
 	@echo "Project bootstrapped successfully!"
