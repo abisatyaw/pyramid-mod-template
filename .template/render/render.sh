@@ -34,6 +34,8 @@ else
   # Run the render script
   python3 .template/render/render.py
 
+  cp ../docs/README.md README.md
+  
   # Deactivate virtual environment
   deactivate
 
