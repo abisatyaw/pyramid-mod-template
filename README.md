@@ -1,4 +1,4 @@
-# pyramid-mod-template
+# template-pyramid-mod
 
 A template repository to quickly bootstrap your own Pyramid mod project.
 
@@ -8,11 +8,11 @@ A template repository to quickly bootstrap your own Pyramid mod project.
 
     ```bash
     # clone and rename it into your mod
-    git clone https://github.com/your-org/pyramid-mod-template.git [your-mod-name]
+    git clone https://github.com/your-org/template-pyramid-mod.git [your-mod-name]
 
     # or you can clone and rename it manually
-    git clone https://github.com/your-org/pyramid-mod-template.git
-    cp -r pyramid-mod-template [your-mod-name]
+    git clone https://github.com/your-org/template-pyramid-mod.git
+    cp -r template-pyramid-mod [your-mod-name]
 
     # Open up VS Code
     cd [your-mod-name]
